@@ -1,0 +1,24 @@
+dataset: cantemist # cantemist, falp, mixed
+pretrained_embeddings_path: embeddings/cwlce.vec
+contextual_embeddings_type: flair
+
+
+ner_hyperparameters:
+    encoder: LSTM # LSTM, RNN, GRU
+    encoder_layers: 3 
+    hidden_size: 128
+    dropout: 0.5
+    use_crf: True
+
+ner_training:
+    max_epochs: 100
+    learning_rate: 0.1
+    mini_batch_size: 16
+    optimizer: SGD
+        
+                                   
+
+
+
+
+
